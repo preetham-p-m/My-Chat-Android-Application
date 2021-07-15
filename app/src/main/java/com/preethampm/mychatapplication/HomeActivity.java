@@ -17,6 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.preethampm.mychatapplication.adapter.UserAdapter;
 import com.preethampm.mychatapplication.model_class.Users;
@@ -54,7 +55,9 @@ public class HomeActivity extends AppCompatActivity {
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     Users users = dataSnapshot.getValue(Users.class);
-                    userArrayList.add(users);
+                    if (users.getUid().equals(firebaseAuth.getUid())) {} else {
+                        userArrayList.add(users);
+                    }
                 }
                 userAdapter.notifyDataSetChanged();
             }

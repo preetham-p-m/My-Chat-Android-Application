@@ -43,10 +43,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull @NotNull UserAdapter.ViewHolder holder, int position) {
         Users users = userArrayList.get(position);
 
-        if (FirebaseAuth.getInstance().getCurrentUser().getUid().equals(users.getUid())) {
-            holder.itemView.setVisibility(View.INVISIBLE);
-        }
-
         holder.userName.setText(users.getName());
         holder.userStatus.setText(users.getStatus());
         Picasso.get().load(users.getImageUri()).into(holder.userProfile);
@@ -62,6 +58,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
             }
         });
+
     }
 
     @Override
