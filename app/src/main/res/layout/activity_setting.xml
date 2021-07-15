@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+
+    <ImageView
+        android:id="@+id/save_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:src="@drawable/tick"
+        tools:ignore="RtlHardcoded" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_setting_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/default_image"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+
+    <EditText
+        android:id="@+id/setting_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/setting_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

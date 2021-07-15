@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "573479817403",
+    "project_id": "my-chat-application-7432a",
+    "storage_bucket": "my-chat-application-7432a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573479817403:android:7f9b807153ccbe89e5999e",
+        "android_client_info": {
+          "package_name": "com.preethampm.mychatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573479817403-g7592j2fpiavit92idq2pi8tp6jhm102.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.preethampm.mychatapplication",
+            "certificate_hash": "ec9d9c334f0b437b0db254cbb03188caba67b2ce"
+          }
+        },
+        {
+          "client_id": "573479817403-g42c6lrf5gojuknmtl06bq41336b8nso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhQHu99XPfklZzLE_BDaE3WCzqJrjbVQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573479817403-g42c6lrf5gojuknmtl06bq41336b8nso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
