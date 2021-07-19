@@ -1,3 +1,3 @@
 # My-Chat-Android-Application
 
-<a href="Apks/" download="myChat.apk">Download Image</a>
+<a href="APK File/app-debug.apk" download="myChat.apk">Download Application</a>
