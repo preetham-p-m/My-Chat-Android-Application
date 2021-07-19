@@ -1,3 +1,3 @@
 # My-Chat-Android-Application
 
-<a href="app/build/outputs/apk/debug/app-debug.apk" download="myChat.apk">Download Application</a>
+### [Click Here To Download APK](https://github.com/preethampm25/My-Chat-Android-Application/blob/master/apkfile/app-debug.apk)
