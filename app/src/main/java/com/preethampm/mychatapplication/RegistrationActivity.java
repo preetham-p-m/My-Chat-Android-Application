@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -103,7 +105,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Password and Confirm Password are different", Toast.LENGTH_SHORT).show();
                 } else {
                     progressDialog.show();
-                    firebaseAuth.createUserWithEmailAndPassword(email, password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
@@ -133,7 +135,6 @@ public class RegistrationActivity extends AppCompatActivity {
                                                                     finish();
                                                                 }else{
                                                                     progressDialog.dismiss();
-                                                                    Toast.makeText(getApplicationContext(), "Error in creating new user", Toast.LENGTH_SHORT).show();
                                                                 }
                                                             }
                                                         });
@@ -144,6 +145,8 @@ public class RegistrationActivity extends AppCompatActivity {
                                     });
 
                                 }
+
+
                                 /*
                                 Image equal to null
                                  */
@@ -167,7 +170,8 @@ public class RegistrationActivity extends AppCompatActivity {
                                     });
                                 }
 
-                            } else {
+                            }
+                            else {
                                 progressDialog.dismiss();
                                 Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
                             }

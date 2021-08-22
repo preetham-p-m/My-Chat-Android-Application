@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "573479817403",
-    "project_id": "my-chat-application-7432a",
-    "storage_bucket": "my-chat-application-7432a.appspot.com"
+    "project_number": "598097384416",
+    "firebase_url": "https://my-chat-41f70-default-rtdb.firebaseio.com",
+    "project_id": "my-chat-41f70",
+    "storage_bucket": "my-chat-41f70.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573479817403:android:7f9b807153ccbe89e5999e",
+        "mobilesdk_app_id": "1:598097384416:android:553145a631886666abd185",
         "android_client_info": {
           "package_name": "com.preethampm.mychatapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573479817403-g7592j2fpiavit92idq2pi8tp6jhm102.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.preethampm.mychatapplication",
-            "certificate_hash": "ec9d9c334f0b437b0db254cbb03188caba67b2ce"
-          }
-        },
-        {
-          "client_id": "573479817403-g42c6lrf5gojuknmtl06bq41336b8nso.apps.googleusercontent.com",
+          "client_id": "598097384416-obbir7429v8e9eb222k6j9lhct2pnlt2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDhQHu99XPfklZzLE_BDaE3WCzqJrjbVQw"
+          "current_key": "AIzaSyAxlLE9Vx6GB6AtR76ULoV0l2opVEmvWpM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573479817403-g42c6lrf5gojuknmtl06bq41336b8nso.apps.googleusercontent.com",
+              "client_id": "598097384416-obbir7429v8e9eb222k6j9lhct2pnlt2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
